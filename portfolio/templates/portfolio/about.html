@@ -1,0 +1,28 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'portfolio/about.css' %}"
+/>
+<section class="section">
+  <h2>About Me</h2>
+  <p>
+    Welcome. My name is Nneka and I'm the CEO of Vbay Solutions.
+    I'm a seasoned humanitarian and development communications expert. I
+    leverage my expertise to drive effective communication strategies that yield
+    results. At Vbay we help individuals, teams, and organizations achieve their
+    goals through impactful messaging, leadership development, and team
+    building. Our other services include copywriting and copyediting, mentoring,
+    website and app development, videography and photography. Keep scrolling to
+    know more about us.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Contact</h2>
+  <form method="post">
+    {% csrf_token %} {{ contact_form.as_p }}
+    <button type="submit" name="contact_submit">Send Message</button>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'portfolio/services.css' %}"
+/>
+<section class="section">
+  <h2>Services - What I Do</h2>
+  <ul>
+    <li><strong>1. Training on:</strong></li>
+    <li> - Effective communication for results.</li>
+    <li> - Personal effectiveness (time management, stress management).</li>
+    <li> - Etiquette.</li>
+    <li>
+       - Management (leadership, team building, coaching, performance
+      management).
+    </li>
+    <li> - Teacher-pupil relations, and continuous development.</li>
+    <li> - Change management and adaptability.</li>
+    <li><strong>2. Copywriting and copyediting. </strong></li>
+    <li><strong>3. Women and youth mentoring.</strong></li>
+    <li><strong>4. Website and app development.</strong></li>
+    <li><strong>5. Videography and photography services.</strong></li>
+  </ul>
+</section>
+
+<section class="section">
+  <h2>Project Portfolio</h2>
+  <div class="portfolio-grid">
+    {% for project in projects %}
+    <div class="project">
+      <h4>{{ project.title }}</h4>
+      <p>{{ project.summary }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
