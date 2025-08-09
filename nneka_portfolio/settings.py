@@ -18,7 +18,7 @@ SECRET_KEY = config("SK")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['Vbay-Solutions.onrender.com']
+ALLOWED_HOSTS = ['nneka-portfolio.onrender.com']
 
 
 # Application definition
@@ -119,3 +119,4 @@ EMAIL_USE_TLS = False
 EMAIL_HOST_USER = config("EADDRESS")
 EMAIL_HOST_PASSWORD = config("EPASSWORD")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
