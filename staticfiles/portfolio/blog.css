@@ -1,0 +1,20 @@
+.blog-preview {
+  background-color: #fff;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blog-preview ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.blog-preview li {
+  background: #f9f9f9;
+  margin-bottom: 0.8rem;
+  padding: 1rem;
+  border-left: 4px solid #d9a8ff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
