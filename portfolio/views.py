@@ -8,10 +8,8 @@ from .models import Project
 class HomeView(TemplateView):
     template_name = 'portfolio/home.html'
 
-class ServicesView(ListView):
-    model = Project
+class ServicesView(TemplateView):
     template_name = 'portfolio/services.html'
-    context_object_name = 'projects'
 
 class AboutView(FormView):
     template_name = 'portfolio/about.html'
@@ -43,3 +41,10 @@ class AboutView(FormView):
 
         return render(request, self.template_name, context)
 
+class PortfolioView(ListView):
+    model = Project
+    context_object_name = 'projects'
+    template_name = 'portfolio/portfolio.html'
+
+class BlogView(TemplateView):
+    template_name = 'portfolio/blog.html'

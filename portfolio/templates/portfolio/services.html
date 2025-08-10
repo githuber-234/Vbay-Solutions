@@ -1,6 +1,4 @@
-{% extends "portfolio/base.html" %}
-{% load static %}
-{% block content %}
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
 <link
   rel="stylesheet"
   type="text/css"
@@ -25,17 +23,4 @@
     <li><strong>5. Videography and photography services.</strong></li>
   </ul>
 </section>
-
-<section class="section">
-  <h2>Project Portfolio</h2>
-  <div class="portfolio-grid">
-    {% for project in projects %}
-    <div class="project">
-      <h4>{{ project.title }}</h4>
-      <p>{{ project.summary }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</section>
 {% endblock %}
-

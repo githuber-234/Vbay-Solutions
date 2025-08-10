@@ -1,0 +1,70 @@
+/* Portfolio Section */
+.section {
+  padding: 2rem;
+  background: #fef6ff;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Portfolio container */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Individual project cards */
+.projects {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.projects h4 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.projects p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 1.5rem;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 1rem;
+  }
+
+  .projects h4 {
+    font-size: 1rem;
+  }
+
+  .projects p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,14 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'portfolio/blog.css' %}"
+/>
+<section class="section blog-preview">
+  <h3>Latest Blog Posts</h3>
+  <ul>
+    <li><strong>5 Trends to Watch in 2025</strong> – July 30</li>
+    <li><strong>Consulting Mistakes to Avoid</strong> – July 15</li>
+  </ul>
+</section>
+{% endblock %}

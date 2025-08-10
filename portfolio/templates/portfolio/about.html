@@ -4,25 +4,52 @@
   type="text/css"
   href="{% static 'portfolio/about.css' %}"
 />
-<section class="section">
+<section class="about">
   <h2>About Me</h2>
   <p>
-    Welcome. My name is Nneka and I'm the CEO of Vbay Solutions.
-    I'm a seasoned humanitarian and development communications expert. I
-    leverage my expertise to drive effective communication strategies that yield
-    results. At Vbay we help individuals, teams, and organizations achieve their
-    goals through impactful messaging, leadership development, and team
-    building. Our other services include copywriting and copyediting, mentoring,
-    website and app development, videography and photography. Keep scrolling to
-    know more about us.
+    Welcome. My name is Nneka and I'm the CEO of Vbay Solutions. I'm a seasoned
+    humanitarian and development communications expert. I leverage my expertise
+    to drive effective communication strategies that yield results. At Vbay we
+    help individuals, teams, and organizations achieve their goals through
+    impactful messaging, leadership development, and team building. Our other
+    services include copywriting and copyediting, mentoring, website and app
+    development, videography and photography. Keep scrolling to know more about
+    us.
   </p>
 </section>
 
-<section class="section">
-  <h2>Contact</h2>
-  <form method="post">
-    {% csrf_token %} {{ contact_form.as_p }}
-    <button type="submit" name="contact_submit">Send Message</button>
-  </form>
+<section class="contact">
+  <div class="contact-left">
+    <form method="POST">
+      {% csrf_token %}
+      <div class="contact-form-head">
+        <h2>Contact Me</h2>
+      </div>
+      {{ contact_form.as_p }}
+      <button class="contact-btn" name="contact_submit" type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+  <div class="contact-right">
+    <a href="mailto:ad123eg456@gmail.com" class="contact-item">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+    <a href="tel:+2348068419918" class="contact-item">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+    <a href="#" class="contact-item" target="_blank">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="#" class="contact-item" target="_blank">
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+    <a href="#" class="contact-item" target="_blank">
+      <i class="fa-brands fa-square-instagram"></i>
+    </a>
+    <a href="#" class="contact-item" target="_blank">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+  </div>
 </section>
 {% endblock %}

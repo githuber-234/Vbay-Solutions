@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nneka Portfolio</title>
+    <title>Vbay Solutions</title>
     <link
       rel="stylesheet"
       type="text/css"
@@ -25,19 +25,23 @@
   </head>
   <body>
     <header class="site-header">
-      <h1 class="logo">Nneka's Portfolio</h1>
+      <h1 class="logo">Vbay<span class="logo-span"> Solutions</span></h1>
 
       <button class="menu-toggle" id="menu-toggle">&#9776;</button>
 
       <nav class="nav-links" id="nav-links">
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'portfolio' %}">Portfolio</a>
+        <a href="{% url 'blog' %}">Blog</a>
         <a href="{% url 'services' %}">Services</a>
       </nav>
     </header>
     <div class="mobile-nav hidden" id="mobile-nav">
       <a href="{% url 'home' %}">Home</a>
       <a href="{% url 'about' %}">About</a>
+      <a href="{% url 'portfolio' %}">Portfolio</a>
+      <a href="{% url 'blog' %}">Blog</a>
       <a href="{% url 'services' %}">Services</a>
     </div>
     <div class="main-content">{% block content %}{% endblock %}</div>
@@ -74,7 +78,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          &copy; My Portfolio | All rights reserved.
+          &copy; 2025 Vbay Solutions | All rights reserved.
         </div>
       </div>
     </footer>

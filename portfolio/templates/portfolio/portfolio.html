@@ -1,0 +1,18 @@
+{% extends "portfolio/base.html" %} {% load static %} {% block content %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'portfolio/portfolio.css' %}"
+/>
+<section class="section">
+  <h2>Project Portfolio</h2>
+  <div class="portfolio">
+    {% for project in projects %}
+    <div class="projects">
+      <h4>{{ project.title }}</h4>
+      <p>{{ project.summary }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}
