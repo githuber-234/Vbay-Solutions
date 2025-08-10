@@ -18,7 +18,7 @@ SECRET_KEY = config("SK")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['vbaysolutions.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['vbay-solutions.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -125,3 +125,4 @@ EMAIL_USE_TLS = False
 EMAIL_HOST_USER = config("EADDRESS")
 EMAIL_HOST_PASSWORD = config("EPASSWORD")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
