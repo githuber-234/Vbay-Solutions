@@ -1,1 +1,2 @@
-web: gunicorn nneka_portfolio.wsgi
+web: gunicorn vbaysolutions.wsgi
+
