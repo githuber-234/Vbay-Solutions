@@ -4,11 +4,18 @@
   type="text/css"
   href="{% static 'portfolio/blog.css' %}"
 />
-<section class="section blog-preview">
-  <h3>Latest Blog Posts</h3>
-  <ul>
-    <li><strong>5 Trends to Watch in 2025</strong> – July 30</li>
-    <li><strong>Consulting Mistakes to Avoid</strong> – July 15</li>
-  </ul>
-</section>
+<main class="blog-container">
+  {% if blogs %}
+  {% for blog in blogs %}
+  <article class="blog-post">
+    <h2>{{ blog.title }}</h2>
+    <p class="date">{{ blog.date }}</p>
+    <p>{{ blog.body }}</p>
+    <a href="#" class="read-more">Read More</a>
+  </article>
+  {% endfor %}
+  {% else %}
+  <p>No blog posts for now.</p>
+  {% endif %}
+</main>
 {% endblock %}

@@ -1,6 +1,17 @@
-.hero {
+.section {
   padding: 3rem 1rem;
+  text-align: center;
+}
+
+.section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #a64ac9;
+}
+
+.hero {
   background-color: #fef6ff;
+  padding: 3rem 1rem;
 }
 
 .hero-content {
@@ -8,89 +19,107 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  max-width: 1100px;
-  margin: 0 auto;
   gap: 2rem;
 }
 
 .hero-text {
-  flex: 1 1 500px;
+  flex: 1;
+  min-width: 280px;
 }
 
 .hero-text h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   color: #a64ac9;
 }
 
 .hero-text p {
   font-size: 1.1rem;
+  margin-bottom: 1.5rem;
   color: #555;
 }
 
-.hero-image {
-  flex: 1 1 300px;
-  text-align: center;
-}
-
 .hero-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.testimonials {
-  background: #fff7fc;
-  padding: 2.5rem 1rem;
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #a64ac9;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background: #fff;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  max-width: 280px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .testimonial-cards {
   display: flex;
-  gap: 1.5rem;
   flex-wrap: wrap;
-  max-width: 1000px;
-  margin: 0 auto;
+  gap: 1.5rem;
+  justify-content: center;
 }
 
 .testimonial-card {
-  background: #ffffff;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  padding: 1rem;
-  flex: 1 1 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-}
-
-.testimonial-card p {
-  font-style: italic;
-  color: #444;
-}
-
-.testimonial-card span {
-  display: block;
-  margin-top: 0.5rem;
-  font-weight: 500;
-  color: #555;
-}
-
-.blog-preview {
-  background-color: #fff;
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.blog-preview ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.blog-preview li {
   background: #f9f9f9;
-  margin-bottom: 0.8rem;
   padding: 1rem;
-  border-left: 4px solid #d9a8ff;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  max-width: 280px;
+}
+
+.cta {
+  background: #fef6ff;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.cta h3 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.btn-primary {
+  background: #fff;
+  color: #a64ac9;
+}
+
+.btn-primary:hover {
+  background: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }

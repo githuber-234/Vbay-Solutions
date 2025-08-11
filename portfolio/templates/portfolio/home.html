@@ -10,12 +10,32 @@
   <div class="hero-content">
     <div class="hero-text">
       <h2>Welcome!</h2>
+      <p>Delivering creative solutions and exceptional results tailored to your needs.</p>
+      <a href="{% url 'services' %}" class="btn">Explore My Work</a>
     </div>
     <div class="hero-image">
       <img src="{% static 'portfolio/images/image.jpg' %}" alt="Your Photo" />
     </div>
   </div>
 </section>
+<section class="section portfolio">
+  <h3>Portfolio Highlights</h3>
+  <div class="portfolio-items">
+    <div class="portfolio-item">
+      <img src="{% static 'portfolio/images/default.jpg' %}" alt="Project 1">
+      <p>Brand Website Design</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="{% static 'portfolio/images/default.jpg' %}" alt="Project 2">
+      <p>E-Commerce Platform</p>
+    </div>
+    <div class="portfolio-item">
+      <img src="{% static 'portfolio/images/default.jpg' %}" alt="Project 3">
+      <p>Mobile App UI</p>
+    </div>
+  </div>
+</section>
+
 <section class="section testimonials">
   <h3>What Clients Say</h3>
   <div class="testimonial-cards">
@@ -27,6 +47,17 @@
       <p>“A rare combination of skill and empathy.”</p>
       <span>– Client B</span>
     </div>
+    <div class="testimonial-card">
+      <p>“Always delivers beyond expectations!”</p>
+      <span>– Client C</span>
+    </div>
   </div>
 </section>
+
+<!-- Call to Action -->
+<section class="section cta">
+  <h3>Let’s Build Something Amazing Together</h3>
+  <a href="{% url 'about' %}" class="btn btn-primary">Contact Me</a>
+</section>
+
 {% endblock %}

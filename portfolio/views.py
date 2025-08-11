@@ -3,7 +3,7 @@ from .forms import ContactForm
 from django.core.mail import send_mail
 from django.conf import settings
 from django.shortcuts import render, redirect
-from .models import Project
+from .models import Project, Blog
 
 class HomeView(TemplateView):
     template_name = 'portfolio/home.html'
@@ -46,5 +46,7 @@ class PortfolioView(ListView):
     context_object_name = 'projects'
     template_name = 'portfolio/portfolio.html'
 
-class BlogView(TemplateView):
+class BlogView(ListView):
+    model = Blog
+    context_object_name = 'blogs'
     template_name = 'portfolio/blog.html'

@@ -3,4 +3,4 @@ from .models import Project
 
 @admin.register(Project)
 class AssessmentAdmin(admin.ModelAdmin):
-    list_display = ('id', 'title', 'summary')
+    list_display = ('id', 'title', 'summary', 'image')
