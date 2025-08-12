@@ -5,16 +5,16 @@
   href="{% static 'portfolio/about.css' %}"
 />
 <section class="about">
-  <h2>About Me</h2>
+  <h2>About Us</h2>
   <p>
-    Welcome. My name is Nneka and I'm the CEO of Vbay Solutions. I'm a seasoned
+    Welcome.<br><br> My name is Nneka and I'm the CEO of Vbay Solutions. I'm a seasoned
     humanitarian and development communications expert. I leverage my expertise
-    to drive effective communication strategies that yield results. At Vbay we
-    help individuals, teams, and organizations achieve their goals through
-    impactful messaging, leadership development, and team building. Our other
-    services include copywriting and copyediting, mentoring, website and app
-    development, videography and photography. Keep scrolling to know more about
-    us.
+    to drive effective communication and development strategies that yield
+    results.<br><br> At Vbay we support individuals, teams, and organizations to achieve
+    their goals through training on impactful communication, leadership, and
+    personal effectiveness.<br><br> Our other services include website development, app
+    development, and promoting the diversity of cultural expressions.<br><br> Keep
+    scrolling to know more about us.
   </p>
 </section>
 
@@ -23,7 +23,7 @@
     <form method="POST">
       {% csrf_token %}
       <div class="contact-form-head">
-        <h2>Contact Me</h2>
+        <h2>Contact Us</h2>
       </div>
       {{ contact_form.as_p }}
       <button class="contact-btn" name="contact_submit" type="submit">
@@ -32,23 +32,43 @@
     </form>
   </div>
   <div class="contact-right">
-    <a href="mailto:nnekaa@live.com" class="contact-item">
+    <a href="mailto:getvbaysolutions@gmail.com" class="contact-item">
       <i class="fa-solid fa-envelope"></i>
     </a>
-    <a href="tel:+2348037870675" class="contact-item">
+    <a href="tel:+2348055811185" class="contact-item">
       <i class="fa-solid fa-phone"></i>
     </a>
-    <a href="#" class="contact-item" target="_blank">
+    <a
+      href="https://www.facebook.com/venussbay"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i class="fa-brands fa-facebook-f"></i>
     </a>
-    <a href="#" class="contact-item" target="_blank">
+    <a
+      href="https://twitter.com/venussbay"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i class="fa-brands fa-twitter"></i>
     </a>
-    <a href="#" class="contact-item" target="_blank">
+    <a
+      href="https://www.instagram.com/vbaysolutions"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <i class="fa-brands fa-square-instagram"></i>
     </a>
-    <a href="#" class="contact-item" target="_blank">
-      <i class="fa-brands fa-linkedin-in"></i>
+    <a
+      href="https://venussbay.blogspot.com"
+      class="contact-item"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa-solid fa-blog"></i>
     </a>
   </div>
 </section>
