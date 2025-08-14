@@ -2,7 +2,6 @@
   padding: 3rem 1rem;
   background-color: #fef6ff;
   margin-bottom: 2rem;
-
 }
 
 .section h2 {
@@ -34,7 +33,7 @@
 }
 
 .project {
-  background-color: #fce8ff; 
+  background-color: #fce8ff;
   border: 1px solid #f3c4ff;
   border-radius: 10px;
   padding: 1rem 1.25rem;
@@ -55,4 +54,13 @@
 
 li {
   list-style: none;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 90vw;
+  height: 55vh;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
 }
